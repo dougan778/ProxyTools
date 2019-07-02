@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading;
 using System.Net;
 using System.IO;
@@ -9,9 +8,6 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium;
 using log4net;
 using OpenQA.Selenium.Support.UI;
-using SeleniumExtras.WaitHelpers;
-using System.Collections.Concurrent;
-using ProxyModel;
 
 namespace RequestDistribution
 {

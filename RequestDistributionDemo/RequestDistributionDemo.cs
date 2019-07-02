@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Configuration;
-using System.IO;
-using System.Text;
 using ProxyModel;
 using RequestDistribution;
 
@@ -10,7 +7,6 @@ namespace RequestDistributionExample
 {
     class RequestDistributionExample
     {
-
         public void ScrapeExamplePages()
         {
             RequestManager manager = BuildRequestManager();
@@ -49,7 +45,6 @@ namespace RequestDistributionExample
             {
                 yield return new Request("http://www.github.com") { DriverType = Request.DriverTypes.HeadlessChrome, ElementsToWaitFor = new List<string>() { @"//*/button[contains(text(), 'Sign up for GitHub') and contains(@class, 'btn-primary-mktg')]" }, ProxyFilter = pf };
             }
-
         }
 
         protected void ProcessResponse(Response response)

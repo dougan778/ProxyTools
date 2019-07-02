@@ -1,10 +1,7 @@
-﻿
-using System.Linq;
-
+﻿using System.Linq;
 using FluentNHibernate.Mapping;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace ProxyModel
 {

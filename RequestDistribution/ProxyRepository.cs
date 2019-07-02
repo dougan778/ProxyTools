@@ -113,7 +113,7 @@ namespace RequestDistribution
                     transaction.Commit();
 
                     // TODO Have to refresh "proxy" here.  It may have had a new site score added and it's not reflected in memory.
-                    // This basically means the first session in which a proxy is used for a particular site, sentinel will not
+                    // This basically means the first session in which a proxy is used for a particular site, the application will not
                     // know of its site scores and think they don't exist until it's restarted and queried again with them present.
                 }
             }
